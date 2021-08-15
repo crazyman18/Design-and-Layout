@@ -1,0 +1,90 @@
+*{
+    font-family: montserrat;
+}
+.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-brand{
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.banner-area{
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.banner-text{
+    padding: 40% 0;
+}
+.banner-text h1{
+    font-size: 75px;
+    color: #fff;
+}
+.banner-text h2{
+    animation: animate 3s steps(19) infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    font-family: poppins;
+    text-transform: uppercase;
+    background-color: deepskyblue;
+    background-image: linear-gradient(45deg, yellow, green);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.banner-text p{
+    font-family: yatra one;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 5%;
+}
+.banner-text a{
+    text-decoration: none;
+    background: linear-gradient(45deg, yellow, green);
+    color: #000;
+    padding: 15px 25px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+    to{
+        width: 300px;
+    }
+}
+
+
+@media (max-width:600px){
+    .banner-text h1{
+        font-size: 40px;
+    }
+    .navbar-toggle.collapsed{
+        background-color: #333;
+        border-color: transparent;
+    }
+    .navbar-default .navbar-collapse{
+        border-color: none;
+        background: #000;
+    }
+    .navbar-default .navbar-nav > li > a:hover{
+        background-color: deepskyblue;
+        background-image: linear-gradient(45deg, yellow, green);
+    }
+}

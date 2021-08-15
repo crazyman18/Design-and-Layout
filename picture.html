@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="picture.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="logowrapper"></div>
+    
+    <script>
+    function changeBg(){
+        
+    const images = [
+        'url(1.png)',
+        'url(2.png)',
+        'url(3.png)',
+        'url(4.png)',
+        'url(5.png)',
+        'url(6.png)',
+        'url(7.png)',
+       ]
+        
+    const section = document.querySelector('.logowrapper')
+    const bg = images[Math.floor(Math.random() * images.length)];
+    section.style.backgroundImage = bg;
+}
+    
+setInterval(changeBg, 2000)
+</script>
+    
+</body>
+</html>
