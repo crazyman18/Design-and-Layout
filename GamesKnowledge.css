@@ -112,13 +112,13 @@
 .switch-two{
     display: block;
     width: 18px;
-    margin: 6px;
+    height: 18px;
     background: #000;
     border: 2px solid #999;
     border-radius: 20px;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    margin-right: 8px;
+    bottom: 8px;
     right: 56px;
     transition: all 0.3s ease-in 0s;
 }
