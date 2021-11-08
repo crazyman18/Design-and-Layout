@@ -20,11 +20,11 @@
    <div class="loader_bg">
         <div class="loader"></div>
     </div>
-    
+   
+    <div class="wrapper">
     <div class="logowrapper"></div>
-   
-   
-   
+   </div>
+        
     <header>
         <div class="container">
             <nav class="nav d-flex">
@@ -36,14 +36,13 @@
                     <span></span>
                 </div>
                 
-                <div class="wrapper">
                 <div class="navigation-bar">
                     <ul>
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" class="active" id="nav">Home</a></li>
+                        <li><a href="#portfolio" id="nav">Portfolio</a></li>
+                        <li><a href="#about" id="nav">About</a></li>
+                        <li><a href="#services" id="nav">Services</a></li>
+                        <li><a href="#contact" id="nav">Contact</a></li>
                         <div class="switch">
                             <input type="checkbox" name="switch" id="custom-switch" class="switch-checkbox">
                             <label for="custom-switch" class="switch-label">
@@ -53,33 +52,31 @@
                         </div>
                     </ul>
                 </div>
-                </div>
             </nav>
         </div>
     </header>
     
+    <div class="wrapper">
     <main>
-        <div class=".wrapper">
         <section class="home" id="home">
             <div class="container">
                 <div class="home-wrapper d-grid">
                     <div class="col-left">
                         <h3>I am Samuel Hermoso</h3>
                         <h1>Game <br> Developer</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste praesentium inventore nulla consequatur, iure placeat et amet illum similique odio, illo, enim officia laboriosam! Libero.</p>
+                        <p>Developers turn a designer's ideas into a user-friendly game. Video game developers, often known as game developers or video game programmers, create code for a range of platforms, including PCs, consoles, web browsers, and mobile phones.</p>
                         
                         <div class="contact-icon d-flex">
-                            <a href="#">Contact Me</a>
+                            <a href="#contact">Contact Me</a>
                         </div>
                     </div>
                     
                     <div class="col-right">
-                        <img src="WilliamHiginbotham.jpg" alt="" class="img-fluid">
+                        <img src="GameDeveloper.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
-        </div>
         <section class="portfolio custom-padding" id="portfolio">
             <div class="container">
                 <div class="section-title">
@@ -93,7 +90,7 @@
                             <h4>Other Games</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aut, debitis dolore quas assumenda cumque quae quo. Harum, facere, tempore.</p>
                             <div class="d-flex">
-                                <a href="#" class="info">More Info</a>
+                                <a href="#contact" class="info">More Info</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +100,7 @@
                             <h4>Video Games</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aut, debitis dolore quas assumenda cumque quae quo. Harum, facere, tempore.</p>
                             <div class="d-flex">
-                                <a href="#" class="info">More Info</a>
+                                <a href="#contact" class="info">More Info</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +110,7 @@
                             <h4>Famous Games</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aut, debitis dolore quas assumenda cumque quae quo. Harum, facere, tempore.</p>
                             <div class="d-flex">
-                                <a href="#" class="info">More Info</a>
+                                <a href="#contact" class="info">More Info</a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +126,7 @@
                         <h2>Theme <br> Developer</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita officia perspiciatis quia ad, possimus veritatis rem. Natus, temporibus, sed neque adipisci sapiente libero corporis, tenetur mollitia quasi vel dolorum, culpa?</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos exercitationem libero ex impedit incidunt architecto, fuga enim, ad delectus, consequuntur corporis rem at rerum, doloribus ab tempore atque in minima.</p>
-                        <a href="#" class="info">More Info</a>
+                        <a href="#contact" class="info">More Info</a>
                     </div>
                     <div class="r-col">
                         <img src="WilliamHiginbotham.jpg" alt="" class="img-fluid">
@@ -196,6 +193,7 @@
         </section>
         
     </main>
+    </div>
     
     <footer>
         <p>All Right Reserved by Your Website</p>
@@ -258,7 +256,7 @@
         ScrollReveal().reveal('.item', { interval: 100 });
         
         $('#custom-switch').change(function(){
-            $('.wrapper').toggleClass('.dark-mode');
+            $('.wrapper').toggleClass('dark-mode');
         });
         
     </script>
