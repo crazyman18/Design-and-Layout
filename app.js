@@ -89,7 +89,7 @@ particlesJS('particles-js',
           "mode": "bubble"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true
